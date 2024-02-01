@@ -1,0 +1,88 @@
+<html>
+<title>TugasAkhhir</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<style>
+    body {
+        background-color: purple;
+    }
+    .lx125 {
+        background-color: white;
+    }
+    .ls125 {
+        background-color: white;
+    }
+    .sprint {
+        background-color: white;
+        
+    }
+</style>
+
+
+
+<body>
+<div class="w3-container" style="background-color: plum;">
+    <center>
+    <img src="fiqri.png" height="150" class=" w3-animate-fading">
+</div> 
+<div class="w3-container" style="background-color: plum;">
+</div>
+<div class="w3-bar w3-purple">
+ <button class="w3-bar-item w3-button" onclick="openKota('Bandung')">Vespa LX125</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Garut')">Vespa S125</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Tasik')">Primavera</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Profile')">Profile</button>
+</div>
+<div id="Bandung" class="w3-container kota w3-animate-zoom" style="display:none">
+    <center>
+        <h1>SELAMAT DATANG DEALER VESPA FIQRI</h1>
+    </center>
+    <h2>Vespa LX 125</h2>
+    <div class="lx125">
+        <img src="lx/lxmrh.jpg" height="250cm">
+        <img src="lx/lxbiru.jpg" height="400cm">
+        <img src="lx/lxkng.jpg" height="250cm">
+    </div>
+</div>
+<div id="Garut" class="w3-container kota w3-animate-bottom" style="display:none">
+    <center>
+        <h1>SELAMAT DATANG DEALER VESPA FIQRI</h1>
+    </center>
+    <h2>Vespa S 125</h2>
+ <div class="ls125">
+     <img src="es/sblack.jpg" height="250cm">
+     <img src="es/yellow-sole-02.png" height="400cm">
+     <img src="es/s.jpg" height="250cm">
+ </div>
+</div>
+<div id="Tasik" class="w3-container kota w3-animate-top style=" style="display:none">
+    <center>
+        <h1>SELAMAT DATANG DEALER VESPA FIQRI</h1>
+    </center>
+    <h2>Vespa Sprint</h2>
+    <div class="sprint">
+        <img src="sprint/spbiru.jpg" height="250cm">
+        <img src="sprint/sprintgrey.png" height="400cm">
+        <img src="sprint/spwhite.png" height="250cm">
+        <img src="sprint/spblack.jpg" height="300cm">
+        <img src="sprint/spijo.jpg" height="300cm">
+    </div>
+</div>
+<div id="Profile" class="w3-container kota w3-animate-top style=" style="display:none">
+<center>
+    <h1>NAMA : DA'ARUL FIQRI SETIAN ILANYA</h1>
+    <h1>NIM : 10123419</h1>
+    <h1>KELAS : IF-10</h1>
+</center>
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namakota).style.display = "block";
+}
+</script>
+</body>
+</html>
